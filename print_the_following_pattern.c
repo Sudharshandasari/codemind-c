@@ -1,18 +1,24 @@
 #include<stdio.h>
 int main()
 {
-    int N;
-    scanf("%d",&N);
-    while(N>0)
+    int n,i,j;
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
     {
-        for(int i=1;i<=N;i++)
+        for(j=0;j<n;j++)
         {
-            printf("%d",i);
+            if(i==j||i+j==n-1)
+            {
+                printf("x");
+            }
+            else
+            {
+                printf("0");
+            }
             
         }
         printf("
 ");
-        N--;
     }
     return(0);
 }    
